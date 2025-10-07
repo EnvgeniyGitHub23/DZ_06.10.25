@@ -28,7 +28,7 @@ public class Main {
 
         // Вызов методов
         printHello("Евгений");
-        System.out.println("Число " + i + " отрицательное? " + isNumberNegative(i));
+        System.out.println("\nЧисло " + i + " отрицательное? " + isNumberNegative(i));
         checkNumber(d);
         printNumberMult3();
 
@@ -36,7 +36,7 @@ public class Main {
 
     // 2 Метод, которому в качестве параметра передается строка, обозначающая имя. Метод должен вывести в консоль сообщение «Привет, указанное_имя!»
     static void printHello(String name) {
-        System.out.println("Привет " + name + symb);
+        System.out.println("\nПривет " + name + symb);
     }
 
     // 3 Метод, которому в качестве параметра передается целое число. Метод должен вернуть true, если число отрицательное, и вернуть false если положительное
@@ -47,15 +47,15 @@ public class Main {
     // 4 Метод, которому в качестве параметра передается целое число, метод должен напечатать в консоль, положительное ли число передали или отрицательное.
     static void checkNumber(double number) {
         if(number < 0) {
-            System.out.println("Число " + number + " отрицательное.");
+            System.out.println("\nЧисло " + number + " отрицательное.");
         } else {
-            System.out.println("Число " + number + " положительное.");
+            System.out.println("\nЧисло " + number + " положительное.");
         }
     }
 
     // 5 Метод, который выводит последовательность чисел от 1000 до 0, кратных 3
     static void printNumberMult3 () {
-        System.out.println("Числа от 1000 до 0, кратные 3");
+        System.out.println("\nЧисла от 1000 до 0, кратные 3:");
         for (short i = 1000; i >= 0; i--) {
             if(i % 3 == 0) {
                 System.out.println(i);
